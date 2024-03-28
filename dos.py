@@ -109,16 +109,7 @@ def main(proxy, url):
 			req7 = r.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt").text
 			req8 = r.get("https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt").text
 			req9 = r.get("https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt").text
-			req10 = r.get("https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt").text
-			req11 = r.get("https://raw.githubusercontent.com/RX4096/proxy-list/main/online/socks5.txt").text
-			req12 = r.get("https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt").text
-			req13 = r.get("https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks5.txt").text
-			req14 = r.get("https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt").text
-			req15 = r.get("https://www.proxy-list.download/api/v1/get?type=socks5").text
-			req16 = r.get("https://www.proxyscan.io/download?type=socks5").text
-			req17 = r.get("https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt").text
-			req18 = r.get("https://raw.githubusercontent.com/rdavydov/proxy-list/main/proxies/socks5.txt").text
-			req = req1 + req2 + req3 + req4 + req5 + req6 + req7 + req8 + req9 + req10 + req11 + req12 + req13 + req14 + req15 + req16 + req17 + req18
+			req = req1 + req2 + req3 + req4 + req5 + req6 + req7 + req8 + req9
 			array = req.split()
 			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
 			check_prox(array, url)
